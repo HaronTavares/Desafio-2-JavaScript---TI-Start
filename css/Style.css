@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --cor-1: #2196F3;
+    --cor-2: #3D5AFE;
+    --cor-3: #0D47A1;
+    --fonte-principal: verdana;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+header {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, var(--cor-3), var(--cor-2));
+    font-family: var(--fonte-principal);
+    color: #fff;
+}
+
+header section {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+header section h1 {
+    margin-bottom: 8px;
+    font-size: 35px;
+}
+
+
+
+main {
+    width: 100%;
+    height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section {
+    justify-content: center;
+}
+
+main section#icon {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.icon-list {
+    font-size: 64px;
+    color: var(--cor-1);
+}
+
+main form {
+    width: 25rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main form label {
+    margin-top: 7px;
+    font-family: var(--fonte-principal);
+}
+
+main form input {
+    height: 30px;
+}
+
+main form input#botao {
+    background-color: var(--cor-1);
+    margin-top: 5px;
+    height: 40px;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 3px var(--cor-3);
+    cursor: pointer;
+}

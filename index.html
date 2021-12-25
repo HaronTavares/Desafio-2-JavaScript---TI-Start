@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='module' src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">  
+    <link rel="stylesheet" href="css/Style.css">
+    <title>ME ACHA - JS</title>
+</head>
+<body>
+    <header class="flex">
+        <section class="flex">
+            <h1>ME ACHA!</h1>
+            <h5>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h5>
+        </section>
+    </header>
+
+    <main class="flex">
+        <section id="icon" class="flex">
+            <span class="material-icons icon-list"> travel_explore </span>
+        </section>
+        <form class="flex" method="post" name="dados">
+
+            <label for="cep">Cep</label>
+            <input type="text" required id="cep" name="cep" value="">
+
+            <label for="rua">Rua</label>
+            <input type="text" disabled id="rua" name="rua" value="">
+
+            <label for="bairro">Bairro</label>
+            <input type="text" disabled id="bairro" name="bairro" value="">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" disabled id="cidade" name="cidade" value="">
+
+            <label for="estado">Estado</label>
+            <input type="text" disabled id="estado" name="estado" value="">
+
+            <input type="button" name="buscar" id="botao" value="BUSCAR">
+
+        </form>
+    </main>
+</body>
+</html>
